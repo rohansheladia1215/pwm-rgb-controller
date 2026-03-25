@@ -9,6 +9,8 @@ This project simulates an LED RGB control module that automatically cycle throug
 
 ## Architecture
 
+![Architecture Diagram](architecture.png)
+
 The PWM module creates a variable duty cycle signal by comparing a continuously running counter with a configurable duty cycle value. The RGB control module instantiates three independent PWM modules, one for each color channel. The FSM cycles through each of the 4 color states and holds each for 5000 clock cycles before transitioning to the next. The testbench verifies  the PWM module an automatic pass/fail check and simulates the full RGB cycle to confirm the correct color order.
 
 ## Waveform
