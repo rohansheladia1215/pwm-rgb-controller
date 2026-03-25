@@ -29,7 +29,7 @@ iverilog -o sim/pwm_sim src/pwm.v src/pwmtb.v
 vvp sim/pwm_sim
 ```
 
--- Run RBG system simulation -- 
+-- Run RGB system simulation -- 
 
 ```bash
 iverilog -o sim/rgb_sim src/pwm.v src/rgbcontroller.v src/colorfsm.v src/rgbtb.v
