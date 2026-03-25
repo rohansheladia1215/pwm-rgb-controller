@@ -1,0 +1,4 @@
+sim/pwm_sim
+sim/rgb_sim
+sim/dump.vcd
+build/
